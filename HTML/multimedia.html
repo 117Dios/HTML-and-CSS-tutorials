@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+        <head>
+          <title>Multimedia</title>
+        </head>
+
+        <body>
+
+        <!-- Per aggiungere un'immagine, si usa il tag img indicando la sorgente con src
+        si possono cambiare le dimensioni con gli attributi height e width. In generale, width si aggiorna con height, ma è modificabile liberamente
+        l'attributo alt è un testo alternativo che compare se l'immagine è "rotta". Viene letto dagli screen readers
+        è possibile trattare le immagini come hyperlink semplicemente rinchiudendole in un blocco anchor -->
+
+        <a href="https://it.wikipedia.org/wiki/Lolcat" target="_blank">
+        <img src="images/cat.jpg" alt="immagine di catto" height="200">
+        </a>
+
+        <br>
+
+        <img src="images/dumb cat.gif" alt="head empty cat" height="200">
+
+        <br>
+
+        <!-- Per includere la musica bisogna creare un blocco audio, al cui interno si specifica la fonte.
+        Bisogna scrivere "controls" per far apparire i controlli, inserire "autoplay" per farla partire, "muted" per mutarla, "loop" per farla loopare
+        Posso inserire più versioni della source, il codice le prende in ordine se la precedente non c'è. Prassi comune è specificare il tipo di file -->
+
+        <p>Drum & Bass </p>
+        <audio controls>
+            <source src="music/Drum & Bass - Andrew Huang.mp3" type="audio/mp3">
+            <source src="music/Drum & Bass - Andrew Huang.wav" type="audio/wav">
+        </audio>
+        <p>Grind</p>
+        <audio controls>
+            <source src="music/Grind - Andrew Huang.mp3">
+        </audio>
+
+        <br>
+
+        <!-- Esattamente come per audio e immagini -->
+        <video  height="500" controls autoplay muted loop>
+          <source src="videos/stalker.mp4" type="video/mp4">
+          <source src="videos/stalker.webm" type="video/webm">
+        </video>
+
+        </body>
+
+</html>

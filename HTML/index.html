@@ -1,0 +1,254 @@
+<!-- index è lo standard per chiamare la home page -->
+<!-- Per creare subito tutto il framework, basta scrivere ! poi premere TAB-->
+
+<!--Dichiarazione che questo è un file html -->
+<!DOCTYPE html>
+
+<!-- Poi creiamo un'apertura e chiusura html, lì dentro ci sarà tutto il codice -->
+<html>
+
+    <!-- Il blocco head contiene informazioni riguardanti la pagina -->
+    <head>
+
+        <title> My first website </title> <!-- Nome che si vede nella scheda -->
+        <link rel="icon" type="image/png" href="images/favicon.png"> <!-- Self-closing e specifica la relazione tra questo documento e una fonte esterna. Ho scelto relazione: icona, tipo: immagine png e href: path immagine -->
+
+
+    </head>
+
+    <!-- il blocco body contiene gli elementi visibili-->
+     <body>
+        <h1> Questo è un header h1 </h1>    <!-- Gli header vanno da h1 a h6 -->
+        <h2> Questo è un header h2 </h2>
+        <h3> Questo è un header h3 </h3>
+        <h4> Questo è un header h4 </h4>
+        <h5> Questo è un header h5 </h5>
+
+        <!-- Per creare un paragrafo, si usa p. Creando più blocchi p, i paragrafi saranno divisi da una linea vuota e andata a capo (linebreak). Se voglio andare direttamente a capo, uso <br> 
+             Andare a capo nella scrittura in html non fa nulla, il testo appare comunque continuo.-->
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Nisi suscipit error asperiores eos sequi vero voluptatem quibusdam quasi, nihil perspiciatis architecto laboriosam repellat mollitia alias, a itaque magni quidem? Magni.
+         </p>
+
+         <!-- Per creare una linea orizzonale (horizontal rule) -->
+        <hr>
+
+        <!-- Invece, scrivere testo in un elemento <pre> vuol dire che la formattazione viene mantenuta (preformatted) -->
+        <pre>
+            Ciao.
+            Sono
+            Formattato.
+        </pre>
+
+        <!-- Creazione hyperlink. a sta per anchor. Inseriamo un attributo, cioè una coppia nome-valore che modifica il comportamento di un elemento.
+        href vuol dire hypertext reference. Possiamo definire come stringa il percorso a un file o un link
+        l'attributo target è come viene aperta la pagina. Con _blank, si apre in una nuova scheda o finestra, a seconda delle impostazioni dell'utente
+        title invece mostra testo aggiuntivo come tooltip -->
+        <a href="lyrics.html" target="_blank" title="Testo canzone">
+        Testo Canzone
+        </a>
+
+        <br>
+
+        <a href="mailto:test@fake.com">
+        email me
+        </a>
+
+        <h2>Text formatting</h2>
+
+        <p>This is normal text</p>
+        <p>This is <b>bold</b> text</p>
+        <p>This is <i>italic</i> text</p>
+        <p>This is <u>underlined</u> text</p>
+        <p>This is <del>deleted</del> text</p>
+        <p>This is <big>big</big> text</p>
+        <p>This is <small>small</small> text</p>
+        <p>This is <sub>subscript</sub> text</p>
+        <p>This is <sup>superscript</sup> text</p>
+        <p>This is <tt>monospaced</tt> text</p>
+        <p>This is <mark style="background-color:lightgreen">highlighted</mark> text</p>
+
+        <hr>
+        <h2>span e div</h2>
+
+        <!--
+        Modo per raggruppare html
+        <span> è un inline container per raggruppare elementi a scopo di stile
+        <div> è un block container per raggruppare elementi a scopo di stile
+        -->
+        
+        <h1><span style="background-color: tomato;">This is a span title</span></h1>
+        <h1><div style="background-color: cyan;">This is a div title</div></h1>
+
+        <p><span style="background-color: tomato;">This is a span sentence</span></p>
+        <p><div style="background-color: cyan;">This is a div sentence</div></p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span style="background-color: tomato;">Laboriosam expedita iure iusto alias tenetur, voluptas voluptatum minima non, rerum odio quasi quis, officiis ipsa? Aperiam aspernatur iusto dolorum tenetur beatae!</span></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <div style="background-color: cyan;">Laboriosam expedita iure iusto alias tenetur, voluptas voluptatum minima non, rerum odio quasi quis, officiis ipsa? Aperiam aspernatur iusto dolorum tenetur beatae!</div></p>
+        
+        <h2>Liste</h2>
+
+        <!-- Si crea una lista a seconda di come si vuole implementare tra i 3 tipi sotto, poi si indicano gli elementi della lista con <li>*</li> -->
+        
+        <!-- Lista non ordinata (Unordered List) -->
+        <h4>Spesa</h4>
+        <ul>
+            <li>Latte</li>
+            <li>Uova</li>
+            <li>Pane</li>
+            <li>Materiali caffè</li>
+            <ul>
+                <li>Chicchi di caffè</li>
+                <li>Crema</li>
+                <li>Zucchero</li>
+            </ul>
+        </ul>
+
+        <!-- Lista ordinata (Ordered List) -->
+
+        <h4>Cose da fare</h4>
+
+        <ol>
+            <li>Colazione</li>
+            <li>Studio</li>
+            <li>Passeggiata col cane</li>
+            <li>Lavoro</li>
+        </ol>
+
+        <!-- Lista descrittiva (Description List): coppia di key:value
+        Per questa lista non si usano i list items ma i Description Terms "<dt></dt>" abbinati alle Description Definitions "<dd></dd>"
+        -->
+
+        <h4>Creature Mitologiche</h4>
+
+        <dl style="background-color: lightgreen; border: 2px solid;">
+            <dt>Drago</dt>
+            <dd>Bestia favolosa (anche dragone ) di aspetto mostruoso (di solito un rettile alato e ignivomo), per lo più simbolo della forza scatenata e luttuosa del male da superare o del nemico da abbattere.</dd>
+            <dt>Fenice</dt>
+            <dd>Favoloso uccello sacro degli Egizi, simile per l'aspetto a una grossa aquila, con vivido piumaggio multicolore, a cui si attribuiva la peculiarità di morire bruciato alla fine di un periodo di 500 anni, e di rinascere quindi dalle proprie ceneri; fig., simbolo di quanto è più unico che raro.</dd>
+            <dt>Vampiro</dt>
+            <dd>Personaggio terrificante di tenebrose credenze popolari, diffuse in vaste aree del mondo moderno, secondo cui il morto (spesso di morte accidentale o violenta, quindi ancora desideroso di vivere), richiamato in vita dal suo stesso spirito o da riti magici, va in giro di notte a succhiare il sangue dei vivi.</dd>
+            <dt>Lupo mannaro</dt>
+            <dd>Un lupo mannaro, detto anche licantropo, è una figura mitologica di un essere umano che, per maledizione o nascita, si trasforma in lupo, o in una creatura ibrida, specialmente durante la luna piena. Questa trasformazione è solitamente incontrollabile e violenta. L'etimologia del termine "licantropo" deriva dal greco "lupo" e "uomo", mentre "lupo mannaro" ha un'origine latina, "lupus hominarius", che significa "lupo umano". </dd>
+        </dl>
+
+        <h2>Tabella</h2>
+        <h3>Orari negozio</h3>
+        <!-- Creiamo una tabella con "<table></table>" e le singole righe con Table Row "<tr></tr>".
+         La prima riga sarà riempita con i Table Headers "<th></th>"
+         Le altre righe saranno riempite con Table Data "<td></td>"
+         -->
+
+        <table border="1" style="background-color: black ;">
+            <tr align="center" style="background-color: lightblue;">
+                <th width="100">Lunedì</th>
+                <th width="100">Martedì</th>
+                <th width="100">Mercoledì</th>
+                <th width="100">Giovedì</th>
+                <th width="100">Venerdì</th>
+                <th width="100">Sabato</th>
+                <th width="100">Domenica</th>
+            </tr>
+            <tr align="center" style="background-color: aliceblue;">
+                <td>9-17</td>
+                <td>9-17</td>
+                <td>9-17</td>
+                <td>9-17</td>
+                <td>9-17</td>
+                <td>10-14</td>
+                <td>Chiuso</td>
+            </tr>
+        </table>
+
+        <h2>Bottoni</h2>
+
+        <a href="https://google.com">
+        <button style="font-size: 25px; background-color: grey; color:lightblue ; border-radius: 25px;">Cliccami</button>
+        </a>
+
+        <h2>Forms</h2>
+
+        <!-- Bisogna definire, con "action", dove vogliamo inviare i dati. Default è index.php
+         "method" specifica se questa è una GET o POST, per dati rispettivamente insensibili o sensibili -->
+        <form action="index.php" method="POST" enctype="multipart/form-data">
+
+            <label for="username">username:</label>
+            <input type="text" id="username" placeholder="Spongebob" minlength="6" maxlength="15" required><br>
+            
+            <label for="password">password:</label>
+            <input type="password" id="password" minlength="6" maxlength="15" required><br>
+
+            <label for="email">email:</label>
+            <input type="email" id="email" placeholder="spongebob.squarepants@bikinibottom.com" minlength="6" maxlength="15" required><br>
+
+            <label for="phone">phone:</label>
+            <input type="tel" id="phone" placeholder="123-345-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+            <label for="bday">birthday:</label>
+            <input type="date" id="bday"><br>
+
+            <label for="quantity">quantity:</label>
+            <input type="number" id="quantity" min="0" max="99"><br>
+
+            <!-- Radio button: sono le "scelte multiple". Se inserisco "name" uguale per tutti, è possibile fare scelta univoca -->
+            <label for="title">title:</label>
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." value="Mr." name="title">
+            <label for="Mrs.">Mrs.</label>
+            <input type="radio" id="Mrs." value="Mrs." name="title">
+            <label for="PhD.">PhD.</label>
+            <input type="radio" id="PhD." value="PhD." name="title"><br>
+
+
+            <!-- Menù dropdown -->
+            <label for="payment">payment:</label>
+            <select id="payment">
+                <option value="visa">visa</option>
+                <option value="mastercard">mastercard</option>
+                <option value="giftcard">giftcard</option>
+            </select><br>
+
+            <!-- Checkbox -->
+             <label for="subscribe">subscribe:</label>
+             <input type="checkbox" id="subscribe"><br>
+             <label for="comment">comment:</label>
+
+
+            <textarea id="comment" rows="3" cols="25"></textarea><br>
+
+            <label for="file">file:</label>
+            <input type="file" id="file" accept="image/png, image/jpeg"><br>
+
+            <input type="reset"><br>
+            <input type="submit">
+
+        </form>
+
+        <h2>Headers e Footers</h2>
+            <header style="background-color: mediumblue;">
+                <h1>Benvenuti da Dios</h1>
+                <a href="">Home</a>
+                <a href="">About Us</a>
+                <a href="">Products</a>
+                <a href="">Contact Us</a>
+                <hr>
+            </header>
+
+            <main>
+                <h4>Check out these cool moves:</h4>
+                <image src="images/favicon.png" alt="profile pic">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos aliquid placeat ipsa, cumque sequi tempora molestias. Quas impedit enim numquam autem, vero beatae? Similique facere sapiente blanditiis soluta. Veritatis, incidunt.</p>
+            </main>
+
+            <footer style="background-color: mediumblue;">
+                <hr>
+                author: Dios<br>
+                &copy; copyright reserved <br>
+                <small><a href="mailto:mymail@fake.com">
+                    mymail@fake.com
+                </a></small>
+            </footer>
+
+     </body>
+
+</html>
