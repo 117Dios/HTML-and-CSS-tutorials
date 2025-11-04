@@ -1,0 +1,25 @@
+/*
+La priorità del CSS è: inline > id > classe
+*/
+
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+}
+p{
+    color:white;
+}
+/* Per riferirsi a un id, facciamo #id */
+#p1{
+    color:green;
+}
+
+/* Per riferirci a una classe, facciamo .classe */
+.odd{
+    color: red;
+}
+.even{
+    color: blue;
+}

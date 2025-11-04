@@ -1,0 +1,17 @@
+/* con la font-face rule posso indicare il percorso di un font in locale, definire il nome con font-family, e poi chiamarlo negli stili sotto come un font qualunque. Va fatto per ogni singolo font locale */
+@font-face {
+    src: url(05_fonts/Roboto-Italic-VariableFont_wdth\,wght.ttf);
+    font-family: Roboto-Italic
+}
+
+h1{
+    /* comando per il font. Se un font rischia di non essere supportato, se ne aggiunge un altro dopo la virgola come backup */
+    font-family: Roboto, Verdana, Arial;
+}
+p{
+    font-family: "Open Sans", "lucida console", "courier new";
+    /* default: 16px. em invece è relativo alla misura dei font e 1em = 100% */
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+}
