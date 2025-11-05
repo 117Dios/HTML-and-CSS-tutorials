@@ -1,0 +1,15 @@
+/*
+combinatori = spiegano le relazioni tra i selettori indicati
+    [spazio] = discendente
+    > = figlio
+    ~ = fratello generale (sono allo stesso livello)
+    + = fratello adiacente (stesso livello ma solo quello immediatamente dopo)
+*/
+
+#container{
+    border: 2px solid;
+}
+
+#container + p {
+    background-color: hsl(60, 80%, 48%);
+}

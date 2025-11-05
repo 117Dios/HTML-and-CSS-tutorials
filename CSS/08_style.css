@@ -1,0 +1,23 @@
+body{
+    margin: 0px;
+}
+
+/*
+I margini sono impostabili in pixel o auto.
+con margin: "auto" si imposta l'elemento al centro della pagina, con margin-[lato]: auto si imposta l'elemento in quel lato
+*/
+.box{
+    border: 5px solid;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+    margin:auto;
+}
+
+#box1{
+    background-color: hsl(0, 100%, 60%);
+    margin: 50px;
+}
+#box2{
+    background-color: hsl(189, 100%, 55%);
+}

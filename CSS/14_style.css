@@ -1,0 +1,13 @@
+body{
+    background-image: url(14_background_imgs/2560_1440.jpg);
+    background-repeat: no-repeat;
+
+    /* Il "centro" finisce sull'estremo superiore della pagina, tagliando via metà immagine */
+    background-position: center;
+
+    /* con questa proprietà indico se l'immagine di background scrolla con la pagina o è fisso */
+    background-attachment: fixed;
+
+    /* in questo modo l'immagine prende tutto lo spazio necessario. Immagini a bassa risoluzione risultano peggiori */
+    background-size: cover;
+}

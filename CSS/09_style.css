@@ -1,0 +1,13 @@
+body{
+    border:3px solid;
+    /* Creo un bordo al body, ma l'immagine esce fuori. Per aggiustare, uso display: flow-root che mantiene l'immagine nel bordo */
+    display: flow-root;
+}
+#img1{
+    float:left;
+    margin-right: 10px;
+}
+#img2{
+    float:right;
+    margin-left: 10px;
+}

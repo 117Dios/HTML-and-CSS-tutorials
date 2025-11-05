@@ -1,0 +1,15 @@
+h1{
+    /*
+    in ordine: offset ascisse, offset ordinate, blur, colore
+    si può aggiungere più di un'ombra. Si scrivono tutte in text-shadow, separate da una virgola ,
+    */
+    text-shadow: 3px 3px 5px hsl(0,100%,61%), -3px -3px 5px hsl(197,100%,61%);
+}
+
+/* Box shadows */
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(234,234,234);
+    box-shadow: 3px 3px 5px ;
+}

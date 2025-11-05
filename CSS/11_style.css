@@ -1,0 +1,20 @@
+div{
+    background-color: hsl(0,100%,75%);
+    width: 100px;
+    height:100px;
+    /* se applico la visualizzazione inline, perdo width e height e diventa equivalente allo span sotto */
+    display:inline;
+}
+span{
+    background-color: hsl(204,100%,75%);
+    /* width e height non sono applicabili agli inline. Per farlo, devo mostrarlo come blocco */
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+/*
+display: inline-block è come inline, ma posso applicare width e height rimanendo in riga con testo successivo
+display: none è come se rimuovesse l'elemento
+Se invece aggiungo  visibility: hidden senza mettere display: none, si prende comunque lo spazio ma è invisibile
+*/

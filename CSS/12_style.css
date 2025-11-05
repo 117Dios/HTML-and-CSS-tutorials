@@ -1,0 +1,30 @@
+/* Questo selettore è per tutti gli elementi */
+
+*{
+    /* Questa proprietà permette di ignorare bordi e padding */
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: hsl(0, 0%, 24%);
+
+    /* Così l'altezza prende il 100% della Viewport Height, cioè tutto lo schermo */
+    height: 100vh;
+}
+
+.box{
+    border: 2px solid;
+    padding: 25px;
+
+    height: auto;
+    width: 50%;
+
+    /* float non funziona se entrambi hanno larghezza >= 50% perché il bordo viene aggiunto, annullando il float */
+    float: left;
+
+    text-align:center;
+
+    max-height: 50%;
+
+
+}
