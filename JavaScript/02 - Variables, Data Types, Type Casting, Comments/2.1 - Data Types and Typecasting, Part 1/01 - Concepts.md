@@ -66,3 +66,42 @@ console.log(7n  /  4n);  //  ->  1n
 
 # String
 
+Defining a string with " allows us to use ' inside as a character. The opposite is also true.
+
+You can also put " or ' as a character in a string that started with that symbol by using the escape character `\`. Any symbol used after the escape character will be treated as a character itseld, and not as something else. This is especially true if you simply want to write \\. To do that, you will write `//`.
+
+Example:
+
+```javascript
+let  message1  =  'The  vessel  \'Mars\'  called  at  the  port.';
+let  message2  =  "Cyclone  \"Cilida\"  to  pass  close  to  Mauritius.";
+   
+console.log(message1);  //  ->  The  vessel  'Mars'  called  at  the  port.
+console.log(message2);  //  ->  Cyclone  "Cilida"  to  pass  close  to  Mauritius.
+   
+let  path  =  "C:\\Windows";
+console.log(path);  //  ->  C:\Windows
+```
+
+Arithmetic operations on String types that are not pure numbers will return the `NaN` error. If the string contains only a number, the operation will be succesfull and the type of the new variable, if declared and initialized this way, will be Number.
+Example:
+
+```javascript
+let  path  =  "C:\\Windows"  -  "Windows";
+console.log(path);  //  ->  NaN
+   
+let  test  =  "100"  -  "10";
+console.log(test);  //  ->  90
+console.log(typeof  test);  //  ->  number
+```
+
+The only exception is the addition `+`, which will try to concatenate the strings.
+
+```javascript
+let  path  =  "C:\\"  +  "Windows";
+console.log(path);  //  ->  C:\Windows
+   
+let  test  =  "100"  +  "10";
+console.log(test);  //  ->  10010
+console.log(typeof  test);  //  ->  string
+```
