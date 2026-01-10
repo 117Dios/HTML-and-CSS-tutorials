@@ -105,3 +105,15 @@ let  test  =  "100"  +  "10";
 console.log(test);  //  ->  10010
 console.log(typeof  test);  //  ->  string
 ```
+
+### String interpolation
+
+As of 2015, string interpolation has been added to JavaScript. In this way, one can treat a character as a template, to use variables directly into the string.
+
+```javascript
+let  country  =  "Malawi";
+let  continent  =  "Africa";
+   
+let  sentence  =  `  ${country}  is  located  in  ${continent}.`;
+console.log(sentence);  //  ->  Malawi  is  located  in  Africa.
+```
