@@ -34,7 +34,7 @@ console.log(height);
 
 # Scope
 
-If ```let``` and ```const``` are declared outside of code blocks (defined by { } ) are global. If created inside code blocks or functions, they're local.
+If ```let``` and ```const``` are declared outside of code blocks (defined by `{ }` ) are global. If created inside code blocks or functions, they're local.
 
 Instead, ```var``` will be global inside code blocks, but local in a function.
 
