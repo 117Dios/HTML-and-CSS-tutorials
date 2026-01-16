@@ -1,5 +1,5 @@
 # Initializing variables
-- ```var```: initialize a variable, and a variable can be re-declared with the same name.
+- ```var```: initializes a variable, and a variable can be re-declared with the same name.
 
 - ```let```: initializes a variable. Throws a SyntaxError if another variable is declared with the same name.
 
