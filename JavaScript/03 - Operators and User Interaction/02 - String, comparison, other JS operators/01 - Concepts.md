@@ -474,7 +474,31 @@ It contains a list of operators we already know with their precedence and associ
   <li>n/a = Not applicable</li>
 </ul>
 
-**Legend:**
-- ⇒ : Left-to-right associativity
-- ⇐ : Right-to-left associativity
-- n/a : Not applicable
+A few words of explanation about the table.
+
+The abbreviation n/a means not applicable, because in some operators the term associativity does not make sense.
+
+At the very beginning of the table, there are three operators that may need further explanation:
+
+- **Grouping** is simply using the brackets ` ( ) `. They take precedence over the other operators, so we can use them to force the execution of operations to take priority;
+
+- **Field access (member access)** is the operator used in dot notation, which is when accessing a selected object field. It takes precedence over other operators (except for brackets), so for example the instruction
+`let x = myObject.test + 10;` means that the value of the test field of the `myObject` object will be fetched first, then we will add a value of 10 to it, and the result will go to the x variable;
+
+- **Function call** precedence tells us that if we call a function, this action will take priority over other operations, except for grouping in brackets and the field access operator (dots). So in the example
+`let y = 10 + myFunction() ** 2;`, `myFunction` will be called first, the result returned by it will be raised to power 2, and only then we will add 10 to the total and save the result to variable y.
+
+Remember, however, if you have any doubts, just use brackets to order the precedence of the operators used.
+
+Example:
+
+```javascript
+let a, b;
+b = (a = (20 + 20) * 2) > (3 ** 2);
+console.log(a); // -> 60
+console.log(b); // -> true
+```
+
+The use of parentheses not only forces the order of actions, but also increases the readability of the code.
+
+The full list of operators and properties can be found on the [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence) [pages](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators).
