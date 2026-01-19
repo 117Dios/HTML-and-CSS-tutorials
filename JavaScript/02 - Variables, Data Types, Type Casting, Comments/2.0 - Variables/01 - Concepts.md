@@ -9,7 +9,7 @@
 Always start a JavaScript document with:
 
 ```javascript
-"use strict;"
+"use strict";
 ```
 
 So that it behaves according to modern standards.
@@ -34,7 +34,9 @@ console.log(height);
 
 # Scope
 
-If ```let``` and ```const``` are declared outside of code blocks (defined by `{ }` ), they are global. If created inside code blocks or functions, they're local.
+Code blocks, defined by `{ }`, separate a piece of code to form a logical whole.
+
+If ```let``` and ```const``` are declared outside of code blocks, they are global. If created inside code blocks or functions, they're local.
 
 Instead, ```var``` will be global inside code blocks, but local in a function.
 

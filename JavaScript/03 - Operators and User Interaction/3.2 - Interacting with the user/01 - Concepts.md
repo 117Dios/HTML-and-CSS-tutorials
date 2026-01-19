@@ -82,7 +82,7 @@ It's a developed version of `confirm()`. Like `confirm()`, `prompt()` contains t
 
 Like `confirm()`, `prompt()` will return a result based on user input.
 
-- `OK`: anything in the text field will be returned from `prompt()` as a String.
+- `OK`: anything in the text field will be returned from `prompt()` as a String. If nothing has been written, it will return an empty string (`""`).
 - `Cancel`: the value returned is `null`.
 
 Since the value returned with the `OK` button is **always** a String, we may need to convert it to another type. As for anything done by a user, we need to be prepared for the fact that the data provided may be invalid, so always treat these values with care.

@@ -66,7 +66,7 @@ console.log(7n  /  4n);  //  ->  1n
 
 ## String
 
-Defining a string with " allows us to use ' inside as a character. The opposite is also true.
+Defining a string with `"` allows us to use ``'`` inside as a character. The opposite is also true.
 
 You can also put " or ' as a character in a string that started with that symbol by using the escape character `\`. Any symbol used after the escape character will be treated as a character itseld, and not as something else. This is especially true if you simply want to write \\. To do that, you will write `//`.
 
