@@ -36,9 +36,13 @@ console.log(height);
 
 Code blocks, defined by `{ }`, separate a piece of code to form a logical whole.
 
-If ```let``` and ```const``` are declared outside of code blocks, they are global. If created inside code blocks or functions, they're local.
+- `let` and `const` variables are **block-scoped**
 
-Instead, ```var``` will be global inside code blocks, but local in a function.
+    - If `let` and `const` are declared outside of code blocks, they are global. If created inside code blocks or functions, they're local.
+
+- `var` is **function-scoped**
+
+    - `var` will be global inside code blocks, but local in a function.
 
 # Functions
 
@@ -52,7 +56,7 @@ function nameOfFunction(){
 
 # Variable Shadowing
 
-A local variable can be declared with the same name as a global variable, making the latter "invisible" to the code block (even if nested) or function. Not the best practice.
+A local variable can be declared with the same name as a global variable, making the latter "invisible" to the code block (even if nested) or function. More precisely, they shadow any variable of outer scopes, not necessarily only global. Not the best practice.
 
 # Variable Hoisting
 
